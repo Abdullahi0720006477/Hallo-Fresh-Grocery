@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a1a10;
+  --foreground: #ffffff;
+  --primary: #06f957;
+  --card-bg: #183521;
+  --border: #214a2f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-card-bg: var(--card-bg);
+  --color-border-glow: var(--border);
+  --font-display: "Manrope", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
